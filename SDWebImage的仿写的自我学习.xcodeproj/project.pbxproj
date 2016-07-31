@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2897F0881D4DFADB00E7477F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F0871D4DFADB00E7477F /* main.m */; };
+		2897F08B1D4DFADB00E7477F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F08A1D4DFADB00E7477F /* AppDelegate.m */; };
+		2897F08E1D4DFADB00E7477F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F08D1D4DFADB00E7477F /* ViewController.m */; };
+		2897F0911D4DFADB00E7477F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2897F08F1D4DFADB00E7477F /* Main.storyboard */; };
+		2897F0931D4DFADB00E7477F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2897F0921D4DFADB00E7477F /* Assets.xcassets */; };
+		2897F0961D4DFADB00E7477F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2897F0941D4DFADB00E7477F /* LaunchScreen.storyboard */; };
+		2897F0A11D4DFADB00E7477F /* SDWebImage________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F0A01D4DFADB00E7477F /* SDWebImage________Tests.m */; };
+		2897F0AC1D4DFADB00E7477F /* SDWebImage________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F0AB1D4DFADB00E7477F /* SDWebImage________UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2897F09D1D4DFADB00E7477F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2897F07B1D4DFADB00E7477F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2897F0821D4DFADB00E7477F;
+			remoteInfo = "SDWebImage的仿写的自我学习";
+		};
+		2897F0A81D4DFADB00E7477F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2897F07B1D4DFADB00E7477F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2897F0821D4DFADB00E7477F;
+			remoteInfo = "SDWebImage的仿写的自我学习";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2897F0831D4DFADB00E7477F /* SDWebImage的仿写的自我学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDWebImage的仿写的自我学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2897F0871D4DFADB00E7477F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2897F0891D4DFADB00E7477F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2897F08A1D4DFADB00E7477F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2897F08C1D4DFADB00E7477F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2897F08D1D4DFADB00E7477F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2897F0901D4DFADB00E7477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2897F0921D4DFADB00E7477F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2897F0951D4DFADB00E7477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2897F0971D4DFADB00E7477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2897F09C1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDWebImage的仿写的自我学习Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2897F0A01D4DFADB00E7477F /* SDWebImage________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage________Tests.m"; sourceTree = "<group>"; };
+		2897F0A21D4DFADB00E7477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2897F0A71D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SDWebImage的仿写的自我学习UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2897F0AB1D4DFADB00E7477F /* SDWebImage________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage________UITests.m"; sourceTree = "<group>"; };
+		2897F0AD1D4DFADB00E7477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2897F0801D4DFADB00E7477F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2897F0991D4DFADB00E7477F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2897F0A41D4DFADB00E7477F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2897F07A1D4DFADB00E7477F = {
+			isa = PBXGroup;
+			children = (
+				2897F0851D4DFADB00E7477F /* SDWebImage的仿写的自我学习 */,
+				2897F09F1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests */,
+				2897F0AA1D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests */,
+				2897F0841D4DFADB00E7477F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2897F0841D4DFADB00E7477F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2897F0831D4DFADB00E7477F /* SDWebImage的仿写的自我学习.app */,
+				2897F09C1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests.xctest */,
+				2897F0A71D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2897F0851D4DFADB00E7477F /* SDWebImage的仿写的自我学习 */ = {
+			isa = PBXGroup;
+			children = (
+				2897F0891D4DFADB00E7477F /* AppDelegate.h */,
+				2897F08A1D4DFADB00E7477F /* AppDelegate.m */,
+				2897F08C1D4DFADB00E7477F /* ViewController.h */,
+				2897F08D1D4DFADB00E7477F /* ViewController.m */,
+				2897F08F1D4DFADB00E7477F /* Main.storyboard */,
+				2897F0921D4DFADB00E7477F /* Assets.xcassets */,
+				2897F0941D4DFADB00E7477F /* LaunchScreen.storyboard */,
+				2897F0971D4DFADB00E7477F /* Info.plist */,
+				2897F0861D4DFADB00E7477F /* Supporting Files */,
+			);
+			path = "SDWebImage的仿写的自我学习";
+			sourceTree = "<group>";
+		};
+		2897F0861D4DFADB00E7477F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2897F0871D4DFADB00E7477F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2897F09F1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2897F0A01D4DFADB00E7477F /* SDWebImage________Tests.m */,
+				2897F0A21D4DFADB00E7477F /* Info.plist */,
+			);
+			path = "SDWebImage的仿写的自我学习Tests";
+			sourceTree = "<group>";
+		};
+		2897F0AA1D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2897F0AB1D4DFADB00E7477F /* SDWebImage________UITests.m */,
+				2897F0AD1D4DFADB00E7477F /* Info.plist */,
+			);
+			path = "SDWebImage的仿写的自我学习UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2897F0821D4DFADB00E7477F /* SDWebImage的仿写的自我学习 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2897F0B01D4DFADB00E7477F /* Build configuration list for PBXNativeTarget "SDWebImage的仿写的自我学习" */;
+			buildPhases = (
+				2897F07F1D4DFADB00E7477F /* Sources */,
+				2897F0801D4DFADB00E7477F /* Frameworks */,
+				2897F0811D4DFADB00E7477F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDWebImage的仿写的自我学习";
+			productName = "SDWebImage的仿写的自我学习";
+			productReference = 2897F0831D4DFADB00E7477F /* SDWebImage的仿写的自我学习.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2897F09B1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2897F0B31D4DFADB00E7477F /* Build configuration list for PBXNativeTarget "SDWebImage的仿写的自我学习Tests" */;
+			buildPhases = (
+				2897F0981D4DFADB00E7477F /* Sources */,
+				2897F0991D4DFADB00E7477F /* Frameworks */,
+				2897F09A1D4DFADB00E7477F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2897F09E1D4DFADB00E7477F /* PBXTargetDependency */,
+			);
+			name = "SDWebImage的仿写的自我学习Tests";
+			productName = "SDWebImage的仿写的自我学习Tests";
+			productReference = 2897F09C1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2897F0A61D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2897F0B61D4DFADB00E7477F /* Build configuration list for PBXNativeTarget "SDWebImage的仿写的自我学习UITests" */;
+			buildPhases = (
+				2897F0A31D4DFADB00E7477F /* Sources */,
+				2897F0A41D4DFADB00E7477F /* Frameworks */,
+				2897F0A51D4DFADB00E7477F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2897F0A91D4DFADB00E7477F /* PBXTargetDependency */,
+			);
+			name = "SDWebImage的仿写的自我学习UITests";
+			productName = "SDWebImage的仿写的自我学习UITests";
+			productReference = 2897F0A71D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2897F07B1D4DFADB00E7477F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Criss;
+				TargetAttributes = {
+					2897F0821D4DFADB00E7477F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2897F09B1D4DFADB00E7477F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2897F0821D4DFADB00E7477F;
+					};
+					2897F0A61D4DFADB00E7477F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2897F0821D4DFADB00E7477F;
+					};
+				};
+			};
+			buildConfigurationList = 2897F07E1D4DFADB00E7477F /* Build configuration list for PBXProject "SDWebImage的仿写的自我学习" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2897F07A1D4DFADB00E7477F;
+			productRefGroup = 2897F0841D4DFADB00E7477F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2897F0821D4DFADB00E7477F /* SDWebImage的仿写的自我学习 */,
+				2897F09B1D4DFADB00E7477F /* SDWebImage的仿写的自我学习Tests */,
+				2897F0A61D4DFADB00E7477F /* SDWebImage的仿写的自我学习UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2897F0811D4DFADB00E7477F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2897F0961D4DFADB00E7477F /* LaunchScreen.storyboard in Resources */,
+				2897F0931D4DFADB00E7477F /* Assets.xcassets in Resources */,
+				2897F0911D4DFADB00E7477F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2897F09A1D4DFADB00E7477F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2897F0A51D4DFADB00E7477F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2897F07F1D4DFADB00E7477F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2897F08E1D4DFADB00E7477F /* ViewController.m in Sources */,
+				2897F08B1D4DFADB00E7477F /* AppDelegate.m in Sources */,
+				2897F0881D4DFADB00E7477F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2897F0981D4DFADB00E7477F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2897F0A11D4DFADB00E7477F /* SDWebImage________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2897F0A31D4DFADB00E7477F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2897F0AC1D4DFADB00E7477F /* SDWebImage________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2897F09E1D4DFADB00E7477F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2897F0821D4DFADB00E7477F /* SDWebImage的仿写的自我学习 */;
+			targetProxy = 2897F09D1D4DFADB00E7477F /* PBXContainerItemProxy */;
+		};
+		2897F0A91D4DFADB00E7477F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2897F0821D4DFADB00E7477F /* SDWebImage的仿写的自我学习 */;
+			targetProxy = 2897F0A81D4DFADB00E7477F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2897F08F1D4DFADB00E7477F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2897F0901D4DFADB00E7477F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2897F0941D4DFADB00E7477F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2897F0951D4DFADB00E7477F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2897F0AE1D4DFADB00E7477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2897F0AF1D4DFADB00E7477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2897F0B11D4DFADB00E7477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SDWebImage的仿写的自我学习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crissClub.SDWebImage--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2897F0B21D4DFADB00E7477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SDWebImage的仿写的自我学习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crissClub.SDWebImage--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2897F0B41D4DFADB00E7477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SDWebImage的仿写的自我学习Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crissClub.SDWebImage--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDWebImage的仿写的自我学习.app/SDWebImage的仿写的自我学习";
+			};
+			name = Debug;
+		};
+		2897F0B51D4DFADB00E7477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SDWebImage的仿写的自我学习Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crissClub.SDWebImage--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDWebImage的仿写的自我学习.app/SDWebImage的仿写的自我学习";
+			};
+			name = Release;
+		};
+		2897F0B71D4DFADB00E7477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SDWebImage的仿写的自我学习UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crissClub.SDWebImage--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SDWebImage的仿写的自我学习";
+			};
+			name = Debug;
+		};
+		2897F0B81D4DFADB00E7477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SDWebImage的仿写的自我学习UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crissClub.SDWebImage--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SDWebImage的仿写的自我学习";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2897F07E1D4DFADB00E7477F /* Build configuration list for PBXProject "SDWebImage的仿写的自我学习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2897F0AE1D4DFADB00E7477F /* Debug */,
+				2897F0AF1D4DFADB00E7477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2897F0B01D4DFADB00E7477F /* Build configuration list for PBXNativeTarget "SDWebImage的仿写的自我学习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2897F0B11D4DFADB00E7477F /* Debug */,
+				2897F0B21D4DFADB00E7477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2897F0B31D4DFADB00E7477F /* Build configuration list for PBXNativeTarget "SDWebImage的仿写的自我学习Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2897F0B41D4DFADB00E7477F /* Debug */,
+				2897F0B51D4DFADB00E7477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2897F0B61D4DFADB00E7477F /* Build configuration list for PBXNativeTarget "SDWebImage的仿写的自我学习UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2897F0B71D4DFADB00E7477F /* Debug */,
+				2897F0B81D4DFADB00E7477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2897F07B1D4DFADB00E7477F /* Project object */;
+}
