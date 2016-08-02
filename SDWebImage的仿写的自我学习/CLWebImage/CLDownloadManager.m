@@ -9,13 +9,14 @@
 #import "CLDownloadManager.h"
 #import "CLDownloadOperation.h"
 #import "NSString+path.h"
+#import "NSString+Hash.h"
 
 @interface CLDownloadManager ()
 
 /**
  *  图片内存缓存
  */
-@property (nonatomic, strong) NSMutableDictionary *imageCache;
+@property (nonatomic, strong) NSCache *imageCache;
 
 /**
  *  操作缓存
@@ -42,9 +43,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.imageCache = [NSMutableDictionary dictionary];
+        self.imageCache = [[NSCache alloc] init];
+        self.imageCache.countLimit = 20;
         self.operationCache = [NSMutableDictionary dictionary];
-        self.queue = [[NSOperationQueue alloc] init];
+        self.queue = [NSOperationQueue new];
 
         //注册内存警告
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(memoryWarning) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
@@ -56,27 +58,27 @@
 - (void)downloadImageWithUrlString:(NSString *)urlString completion:(void (^)(UIImage *))completion {
     NSAssert(completion != nil, @"必须传入回调的block");
 
-    // 从内存中加载图片
-    UIImage *cacheImage = self.imageCache[urlString];
-    if (cacheImage) {
-        completion(cacheImage);
-        return;
-    }
+    //    // 从内存中加载图片
+    //    UIImage *cacheImage = self.imageCache[urlString];
+    //    if (cacheImage) {
+    //        completion(cacheImage);
+    //        return;
+    //    }
 
-    // 从沙盒中加载数据
-    NSString *sanBoxPath = [urlString appendCachePath];
-    cacheImage = [UIImage imageWithContentsOfFile:sanBoxPath];
-    if (cacheImage) {
-        NSLog(@"从沙盒中加载");
-        // 如果沙盒中有数据，那么就再内存中再写一份
-        [self.imageCache setObject:cacheImage forKey:urlString];
-
-        completion(cacheImage);
-        return;
-    }
+    //    // 从沙盒中加载数据
+    //    NSString *sanBoxPath = [urlString appendCachePath];
+    //    cacheImage = [UIImage imageWithContentsOfFile:sanBoxPath];
+    //    if (cacheImage) {
+    //        NSLog(@"从沙盒中加载");
+    //        // 如果沙盒中有数据，那么就再内存中再写一份
+    //        [self.imageCache setObject:cacheImage forKey:urlString];
+    //
+    //        completion(cacheImage);
+    //        return;
+    //    }
 
     // 如果操作存在，这不添加操作
-    if (self.operationCache[urlString]) {
+    if (self.operationCache[urlString] != nil) {
         return;
     }
 
@@ -84,13 +86,18 @@
 
     __weak typeof(op) weakSelf = op;
     [op setCompletionBlock:^{
+        if (weakSelf.isCancelled) {
+            NSLog(@"该操作已被取消,所以不用回调");
+            return;
+        }
 
+        UIImage *image = weakSelf.image;
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 
-            UIImage *image = weakSelf.image;
-            // 将图片添加到内存中
-            [self.imageCache setObject:image forKey:urlString];
-
+            if (image != nil){
+                // 将图片添加到内存中
+                [self.imageCache setObject:image forKey:urlString];
+            }
             // 图片添加完成后，将操作从缓存中删除
             [self.operationCache removeObjectForKey:urlString];
 
@@ -101,6 +108,16 @@
 
     [self.operationCache setObject:op forKey:urlString];
     [self.queue addOperation:op];
+    NSLog(@"创建操作下载图片");
+}
+
+- (void)cancelOperationWithUrlString:(NSString *)urlString {
+    NSOperation *op = [self.operationCache objectForKey:urlString];
+    if (op != nil) {
+        [op cancel];
+        // 将该操作从内存中移除
+        [self.operationCache removeObjectForKey:urlString];
+    }
 }
 
 /**

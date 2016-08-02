@@ -61,8 +61,9 @@
     CLAppInfoModel *appInfo = self.appInfos[indexPath.row];
     cell.nameLabel.text = appInfo.name;
     cell.downloadLabel.text = appInfo.name;
+    cell.iconView.image = nil;
     
-    [cell.iconView cl_setImageWithUrlString:appInfo.icon placeholderImage:[UIImage imageNamed:@""]];
+    [cell.iconView cl_setImageWithUrlString:appInfo.icon placeholderImage:[UIImage imageNamed:@"black_005"]];
 
 //    [[CLDownloadManager sharedManager] downloadImageWithUrlString:appInfo.icon completion:^(UIImage *image) {
 //

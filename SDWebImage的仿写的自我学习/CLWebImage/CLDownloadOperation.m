@@ -30,6 +30,12 @@
  *  会自动调用
  */
 - (void)main {
+    [NSThread sleepForTimeInterval:3];
+    if (self.isCancelled) {
+        NSLog(@"下载前被取消");
+        return;
+    }
+
     // 1. 通过地址字符初始化NSURL
     NSURL *url = [NSURL URLWithString:self.urlString];
     // 2. 通过 URL 获取二进制数据

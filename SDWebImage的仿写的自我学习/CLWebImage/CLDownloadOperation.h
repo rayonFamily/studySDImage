@@ -10,7 +10,7 @@
 
 @interface CLDownloadOperation : NSOperation
 
-@property (weak, nonatomic) UIImage *image;
+@property (strong, nonatomic) UIImage *image;
 
 /**
  *  通过一个urlString创建一个操作

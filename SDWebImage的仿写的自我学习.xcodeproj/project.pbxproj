@@ -27,6 +27,7 @@
 		2897F0DA1D4DFD7A00E7477F /* CLDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F0D91D4DFD7A00E7477F /* CLDownloadManager.m */; };
 		2897F0DD1D4E021700E7477F /* CLDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2897F0DC1D4E021700E7477F /* CLDownloadOperation.m */; };
 		28A200F51D4EDEDE00BBF323 /* UIImageView+CLWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A200F41D4EDEDE00BBF323 /* UIImageView+CLWebCache.m */; };
+		28A201371D4F673E00BBF323 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A201361D4F673E00BBF323 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		2897F0DC1D4E021700E7477F /* CLDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDownloadOperation.m; sourceTree = "<group>"; };
 		28A200F31D4EDEDE00BBF323 /* UIImageView+CLWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CLWebCache.h"; sourceTree = "<group>"; };
 		28A200F41D4EDEDE00BBF323 /* UIImageView+CLWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CLWebCache.m"; sourceTree = "<group>"; };
+		28A201351D4F673E00BBF323 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		28A201361D4F673E00BBF323 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,8 @@
 		2897F0D31D4DFBE900E7477F /* CachePath */ = {
 			isa = PBXGroup;
 			children = (
+				28A201351D4F673E00BBF323 /* NSString+Hash.h */,
+				28A201361D4F673E00BBF323 /* NSString+Hash.m */,
 				2897F0D41D4DFBE900E7477F /* NSString+path.h */,
 				2897F0D51D4DFBE900E7477F /* NSString+path.m */,
 			);
@@ -357,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2897F0D01D4DFBB200E7477F /* AFURLRequestSerialization.m in Sources */,
+				28A201371D4F673E00BBF323 /* NSString+Hash.m in Sources */,
 				2897F08E1D4DFADB00E7477F /* ViewController.m in Sources */,
 				2897F08B1D4DFADB00E7477F /* AppDelegate.m in Sources */,
 				2897F0BD1D4DFB9500E7477F /* CLAppInfoCell.m in Sources */,

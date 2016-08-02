@@ -10,6 +10,8 @@
 
 @interface UIImageView (CLWebCache)
 
-- (void)cl_setImageWithUrlString:(NSString *)urlString placeholderImage:(UIImage *)image;
+@property (copy ,nonatomic) NSString * urlString;
+
+- (void)cl_setImageWithUrlString:(NSString *)string placeholderImage:(UIImage *)image;
 
 @end
